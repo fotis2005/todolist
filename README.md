@@ -1,4 +1,4 @@
-# 📌 To-Do List App in C++
+#  To-Do List App in C++
 
 This repository contains a console-based **To-Do List application written in C++**, allowing the user to:
 
@@ -6,7 +6,7 @@ This repository contains a console-based **To-Do List application written in C++
 - View current tasks
 - Modify or delete tasks
 
-## 📁 Repository Contents
+## Repository Contents
 
 - `main.cpp`: The main source code of the application (includes all functionality)
 - `tasks.txt`: The file where tasks are saved

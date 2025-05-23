@@ -1,14 +1,71 @@
-#  To-Do List App in C++
 
-This repository contains a console-based **To-Do List application written in C++**, allowing the user to:
+=========================
+  Αναλυτική Εξήγηση C++
+=========================
+ Κλάση Task
+----------------------------
+Αντιπροσωπεύει μια μεμονωμένη εργασία
 
-- Add new tasks
-- View current tasks
-- Modify or delete tasks
+ Μέλη:
+- name, description, dueDate, completed
 
-## Repository Contents
+ Συναρτήσεις:
+- get/set για όλα τα πεδία
+- markCompleted(): Θέτει την εργασία ως ολοκληρωμένη
+- displayTask(): Εκτυπώνει όνομα, κατάσταση, ημερομηνία, περιγραφή
+- toFileString(): Μορφή κατάλληλη για αποθήκευση σε αρχείο
 
-- `main.cpp`: The main source code of the application (includes all functionality)
-- `tasks.txt`: The file where tasks are saved
-- `README.md`: This file with usage instructions
+ Παράδειγμα:
+Task("Homework", "Math exercises", "2025-05-30")
 
+--------------------------------------------
+
+ Κλάση ToDoList
+==============================
+
+ Δεδομένα:
+- vector<Task> tasks
+- const string filename = "tasks.txt"
+
+ Συναρτήσεις:
+
+ fortwseApoArxeio()
+- Διαβάζει από το αρχείο και δημιουργεί αντικείμενα Task
+
+ apothikeuseSeArxeio()
+- Αποθηκεύει όλα τα Task στο αρχείο
+
+ emfanisiMenu()
+- Εκτυπώνει το μενού επιλογών
+
+ eisagogiDouleias()
+- Ζητά στοιχεία από τον χρήστη και προσθέτει Task
+
+ emfanisiDouleiwn()
+- Εκτυπώνει όλες τις εργασίες
+
+ diagrafiDouleias()
+- Εμφανίζει τις εργασίες, επιλέγει και διαγράφει μία
+
+ simaineOloklirothike()
+- Ορίζει μια εργασία ως ολοκληρωμένη
+
+ tropopoihsh()
+- Επιτρέπει την τροποποίηση υπάρχουσας εργασίας
+
+ taksinomisiHmerominia()
+- Ταξινομεί τις εργασίες κατά ημερομηνία
+
+ run()
+- Ελέγχει τη ροή του προγράμματος
+- Παρουσιάζει μενού, δέχεται επιλογές, εκτελεί ενέργειες
+
+ main()
+- Δημιουργεί ToDoList και ξεκινάει το πρόγραμμα
+
+-------------------------------
+
+ Παράδειγμα Χρήσης:
+1. Προσθήκη δουλειάς
+2. Ολοκλήρωση ή διαγραφή
+3. Αποθήκευση σε αρχείο
